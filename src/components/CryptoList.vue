@@ -18,7 +18,7 @@
             <!-- Nascondi su mobile -->
             <th class="py-2 px-4 border-b hidden md:table-cell">Market Cap</th>
             <th class="py-2 px-4 border-b hidden md:table-cell">Total Volume</th>
-            <th class="py-2 px-4 border-b cursor-pointer flex items-center hidden md:table-cell" @click="sortByPriceChange">
+            <th class="py-2 px-4 border-b cursor-pointer lg:flex items-center hidden md:table-cell" @click="sortByPriceChange">
               Price Change 24h
               <svg v-if="sortDesc" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
