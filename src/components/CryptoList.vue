@@ -10,7 +10,7 @@
           class="w-full p-2 border rounded-lg shadow-sm"
         />
       </div>
-      <table class="min-w-full bg-white border rounded-lg shadow-md container">
+      <table class="w-full bg-white border rounded-lg shadow-md">
         <thead style="text-align: left;">
           <tr>
             <th class="py-2 px-4 border-b">Name</th>
@@ -18,7 +18,7 @@
             <!-- Nascondi su mobile -->
             <th class="py-2 px-4 border-b hidden md:table-cell">Market Cap</th>
             <th class="py-2 px-4 border-b hidden md:table-cell">Total Volume</th>
-            <th class="py-2 px-4 border-b cursor-pointer flex items-center" @click="sortByPriceChange">
+            <th class="py-2 px-4 border-b cursor-pointer flex items-center hidden md:table-cell" @click="sortByPriceChange">
               Price Change 24h
               <svg v-if="sortDesc" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
@@ -40,7 +40,7 @@
             <!-- Nascondi su mobile -->
             <td class="py-2 px-4 border-b hidden md:table-cell">{{ formatNumber(coin.market_cap) }}</td>
             <td class="py-2 px-4 border-b hidden md:table-cell">{{ formatNumber(coin.total_volume) }}</td>
-            <td class="py-2 px-4 border-b">
+            <td class="py-2 px-4 border-b hidden md:table-cell">
               <span v-if="coin.price_change_24h <= 0" class="inline-flex items-center rounded-md bg-red-300 px-2 py-1 text-xs font-medium text-black-600">
                 {{ coin.price_change_24h }}
               </span>
@@ -85,9 +85,5 @@ export default {
 .container {
   max-width: 800px;
 }
-@media (max-width: 380px) {
-  .container {
-    width: 100px;
-  }
-}
+
 </style>
