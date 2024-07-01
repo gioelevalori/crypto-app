@@ -23,6 +23,8 @@ Percentage change in price in the last 24 hours.
 Conclusion:
 CryptoApp is designed to be an intuitive and informative dashboard allowing users to closely monitor cryptocurrencies using up-to-date data from CoinGecko, including cryptocurrency name, current price, market capitalization, total trading volume, and percentage change in price over the last 24 hours.
 
+Site link: https://crypto-app-gioelevalori.netlify.app
+
 ## Project setup
 ```
 npm install
